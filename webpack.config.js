@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
     entry: "./src/index.js",
     output: {
+        publicPath: "/Mobile-first-solution-using-React-without-boilerplate/",
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
