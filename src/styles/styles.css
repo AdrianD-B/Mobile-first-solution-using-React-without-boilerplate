@@ -120,9 +120,9 @@ p{
 }
 
 @media only screen and (max-width: 400px) {
-    .main-container{ width: 300px; }
-    .rating-container{ width: 300px; }
-    .thanks-container{ width: 300px; }
+    .main-container,.rating-container,.thanks-container{ 
+        width: 300px; 
+    }
   }
 
 
