@@ -1,0 +1,130 @@
+* {
+    --Orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(214, 22%, 23%); /*changing medium grey because this color doesn't match the preview images*/
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+    font-family: 'Overpass', sans-serif;
+    color: var(--LightGrey);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background: var(--VeryDarkBlue);
+}
+
+h1{
+    font-weight: 700;
+    color: var(--white)
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    width: 90%;
+}
+
+.checked{
+    padding: 15px;
+    border-radius: 30px;
+    background: var(--MediumGrey);
+    color: var(--Orange);
+}
+
+/* Rating */
+
+.main-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--DarkBlue);
+}
+
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;   
+}
+
+.rating{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: var(--MediumGrey);
+    color: var(--LightGrey);
+    cursor: pointer;
+    user-select: none;
+}
+
+.rating:hover{
+    background: var(--LightGrey);
+    color: var(--white);
+}
+
+.rating:active{
+    background: var(--Orange);
+    color: var(--white);
+}
+
+
+.button-container{
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--white);
+    background: var(--Orange);
+	cursor: pointer;
+	outline: inherit;
+    transition: all .1s ease-in;
+}
+
+.button-container:active{
+    background: var(--white);
+    color: var(--Orange);
+}
+
+/* Thank-you */
+
+.thanks-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--DarkBlue);
+}
+
+.thanks-rating{
+    color: var(--Orange);
+    background: var(--MediumGrey);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .main-container{ width: 300px; }
+    .rating-container{ width: 300px; }
+    .thanks-container{ width: 300px; }
+  }
+
+
+/* - Mobile: 375px
+- Desktop: 1440px */
